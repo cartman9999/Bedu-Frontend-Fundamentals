@@ -3,37 +3,44 @@
     <head>
         <!-- Aquí va información importante pero no visible dentro del navegador -->
         <title>Matcha</title>
-        <style>
-            h1 {
-                color: #025157;
-            }
-            body {
-                background-color: #fffbf7;
-            }
-            button {
-                color: #FFF;
-                background-color: #025157;
-            }
-        </style>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;700&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!-- Esto es lo que se verá en el navegador web -->
-        <h1><strong>Build</strong> your blog. <strong>Build</strong> your business.</h1>
-        <!-- O usando un párrafo -->
-        
-        <p>
-            <strong>Instantly</strong> publish articles, drive more traffic, grow your email list, 
-            and see your blog’s impact on sales.
-        </p>
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Matcha Logo">
+            </a>
+            <nav class="navbar">
+                <ul>
+                    <li>Platform</li>
+                    <li>Pricing</li>
+                    <li>Customers</li>
+                    <li>Resources</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <a href="/login" class="sign-in">Sign In</a>
+                <button class="trial-btn">Start free trial</button>
+            </div>
+        </header>
 
-        <form>
-            <input type="email">
-            <button type="submit">
-                Try it now &rarr;
-            </button>
-        </form>
+        <main>
+             <!-- Esto es lo que se verá en el navegador web -->
+            <h1><strong>Build</strong> your blog. <strong>Build</strong> your business.</h1>
+            <h4>Instantly publish articles, drive more traffic, grow your email list, 
+                and see your blog’s impact on sales.</h4>
 
-        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="">
-    
+            <form class="signup-form">
+                <input type="email" class="email" placeholder="Enter email adress">
+                <button type="submit" class="email-btn">
+                    Try it now &rarr;
+                </button>
+            </form>
+
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="">
+        </main>
     </body>
 </html>
